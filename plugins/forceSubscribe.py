@@ -33,7 +33,7 @@ def _onUnMuteRequest(client, cb):
         client.send_message(chat_id, f"❗ **{cb.from_user.mention} is trying to UnMute himself but i can't unmute him because i am not an admin in this chat add me as admin again.**\n__#Leaving this chat...__")
         client.leave_chat(chat_id)
       else:
-        client.answer_callback_query(cb.id, text="❗ Warning: Don't click the button if you can speak freely.", show_alert=True)
+        client.answer_callback_query(cb.id, text="❗ Warning: Pls Don't Press Me If U Can Message Freely.", show_alert=True)
 
 
 
@@ -53,8 +53,8 @@ def _check_member(client, message):
               "{}, you are **not subscribed** to my [channel](https://t.me/{}) yet. Please [join](https://t.me/{}) and **press the button below** to unmute yourself.".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
               reply_markup=InlineKeyboardMarkup(
-                  [[InlineKeyboardButton("📢 Join Update Channel 📢", url=f"https://t.me/{channel}")],
-                   [InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")]]
+                  [[InlineKeyboardButton("📢 Join In OUr Channel 📢", url=f"https://t.me/{channel}")],
+                   [InlineKeyboardButton("Release Me", callback_data="onUnMuteRequest")]]
               )
           )
           client.restrict_chat_member(chat_id, user_id, ChatPermissions(can_send_messages=False))
