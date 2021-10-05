@@ -10,6 +10,8 @@
 
 ## Deploy
 
+https://heroku.com/deploy?template=https://github.com/Abijithkutty/Force-Subs-Telegram-bot
+
 ### Installation
 - Clone this repo
 ```
