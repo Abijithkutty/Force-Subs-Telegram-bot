@@ -42,7 +42,7 @@ def map(pos):
             [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = "https://www.youtube.com/watch?v=5rB7DfNoZ0Y"
+        url = "https://t.me/REX_BOTZ"
         button = [
             [InlineKeyboardButton(text = 'Support Chat', url="https://t.me/REX_Bots_Support")],
             [InlineKeyboardButton(text = 'Feature Request & Issues', url=url)],
